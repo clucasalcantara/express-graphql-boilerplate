@@ -4,7 +4,7 @@
   "description": "simple express graphql boilerplate",
   "main": "index.js",
   "scripts": {
-    "lint": "eslint server",
+    "lint": "eslint index.js lib",
     "lint:fix": "npm run lint -- --fix",
     "start": "node index.js",
     "test": "npm run lint"
