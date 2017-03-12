@@ -1,6 +1,7 @@
 const express = require('express');
 const graphqlHTTP = require('express-graphql');
 const { buildSchema } = require('graphql');
+const winston = require('winston');
 
 // Construct a schema, using GraphQL schema language
 const schema = buildSchema(`
