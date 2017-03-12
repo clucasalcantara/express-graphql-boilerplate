@@ -12,6 +12,7 @@
   "author": "Edd Yerburgh",
   "license": "MIT",
   "dependencies": {
+    "config": "^1.25.1",
     "express": "^4.15.2",
     "express-graphql": "^0.6.3",
     "graphql": "^0.9.1",

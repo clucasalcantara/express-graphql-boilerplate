@@ -180,6 +180,12 @@ concat-stream@^1.4.6:
     readable-stream "^2.2.2"
     typedarray "^0.0.6"
 
+config@^1.25.1:
+  version "1.25.1"
+  resolved "https://registry.yarnpkg.com/config/-/config-1.25.1.tgz#72ac51cde81e2c77c6b3b66d0130dae527a19c92"
+  dependencies:
+    json5 "0.4.0"
+
 contains-path@^0.1.0:
   version "0.1.0"
   resolved "https://registry.yarnpkg.com/contains-path/-/contains-path-0.1.0.tgz#fe8cf184ff6670b6baef01a9d4861a5cbec4120a"
@@ -224,15 +230,9 @@ debug@2.2.0:
   dependencies:
     ms "0.7.1"
 
-debug@2.6.1:
+debug@2.6.1, debug@^2.1.1, debug@^2.2.0:
   version "2.6.1"
   resolved "https://registry.yarnpkg.com/debug/-/debug-2.6.1.tgz#79855090ba2c4e3115cc7d8769491d58f0491351"
-  dependencies:
-    ms "0.7.2"
-
-debug@^2.1.1, debug@^2.2.0:
-  version "2.6.2"
-  resolved "https://registry.yarnpkg.com/debug/-/debug-2.6.2.tgz#dfa96a861ee9b8c2f29349b3bcc41aa599a71e0f"
   dependencies:
     ms "0.7.2"
 
@@ -836,6 +836,10 @@ json-stable-stringify@^1.0.0, json-stable-stringify@^1.0.1:
   resolved "https://registry.yarnpkg.com/json-stable-stringify/-/json-stable-stringify-1.0.1.tgz#9a759d39c5f2ff503fd5300646ed445f88c4f9af"
   dependencies:
     jsonify "~0.0.0"
+
+json5@0.4.0:
+  version "0.4.0"
+  resolved "https://registry.yarnpkg.com/json5/-/json5-0.4.0.tgz#054352e4c4c80c86c0923877d449de176a732c8d"
 
 jsonify@~0.0.0:
   version "0.0.0"
