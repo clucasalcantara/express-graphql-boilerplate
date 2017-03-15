@@ -7,7 +7,6 @@ const config = require('config');
 
 const PORT = config.get('port');
 
-
 const app = express();
 
 app.use('/graphql', bodyParser.json(), graphqlExpress({
