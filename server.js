@@ -4,14 +4,16 @@ const bodyParser = require('body-parser');
 const schema = require('./data/schema');
 const logger = require('./lib/logger');
 const config = require('config');
+const cors = require('cors');
 
 const PORT = config.get('port');
 
 const app = express();
 
+app.use('*', cors());
+
 app.use('/graphql', bodyParser.json(), graphqlExpress({
   schema,
-  context: {},
 }));
 
 app.use('/graphiql', graphiqlExpress({
