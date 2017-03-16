@@ -2,11 +2,11 @@
   "name": "express-graphql-boilerplate",
   "version": "1.0.0",
   "description": "simple express graphql boilerplate",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
-    "lint": "eslint index.js lib data",
+    "lint": "eslint server.js lib data",
     "lint:fix": "npm run lint -- --fix",
-    "start": "node index.js",
+    "start": "node server.js",
     "test": "npm run lint"
   },
   "author": "Edd Yerburgh",
