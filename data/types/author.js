@@ -7,10 +7,10 @@ Post = require('./post');
 
 Author = `
   type Author {
-    id: Int! # the ! means that every author object _must_ have an id
+    id: Int!
     firstName: String
     lastName: String
-    posts: [Post] # the list of Posts by this author
+    posts: [Post]
   }
 `;
 
