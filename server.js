@@ -16,9 +16,11 @@ app.use('/graphql', bodyParser.json(), graphqlExpress({
   schema,
 }));
 
-app.use('/graphiql', graphiqlExpress({
-  endpointURL: '/graphql',
-}));
+if (process.env.NODE_ENV === 'dev') {
+  app.use('/graphiql', graphiqlExpress({
+    endpointURL: '/graphql',
+  }));
+}
 
 app.listen(PORT, () => {
   logger.log('info', `Running a GraphQL API server at localhost:${PORT}/graphql`);
