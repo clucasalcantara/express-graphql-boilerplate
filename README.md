@@ -45,11 +45,11 @@ http://localhost:4000/graphql
 Start the server
 
 ```
-NODE_ENV=dev npm start
+npm run dev
 ```
 
 ```
-NODE_ENV=dev yarn start
+yarn run dev
 ```
 
 GraphiQL will be running at http://localhost:4000/graphiql/
