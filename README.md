@@ -20,17 +20,27 @@ yarn install
 
 ## Usage
 
-To run production
+### Production
+
+Start the server
 ```
 npm start
 ```
-
 ```
 yarn start
 ```
-The app will be serving from http://localhost:4000/graphiql/
+And query http://localhost:4000/graphql/
+```shell
+curl -X POST \
+-H "Content-Type: application/json" \
+-d '{"query": "{ posts { id } }"}' \
+http://localhost:4000/graphql
+```
 
-To run dev
+### Dev
+
+Start the server
+
 ```
 NODE_ENV=dev npm start
 ```
