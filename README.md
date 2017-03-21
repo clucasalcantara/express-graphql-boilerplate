@@ -29,7 +29,10 @@ npm start
 ```
 yarn start
 ```
-And query http://localhost:4000/graphql/
+
+The server will be running at http://localhost:4000/graphql/
+
+Example query:
 ```shell
 curl -X POST \
 -H "Content-Type: application/json" \
