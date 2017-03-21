@@ -4,9 +4,10 @@
   "description": "simple express graphql boilerplate",
   "main": "server.js",
   "scripts": {
+    "dev": "NODE_ENV=dev node server.js",
     "lint": "eslint server.js lib data",
     "lint:fix": "npm run lint -- --fix",
-    "start": "node server.js",
+    "start": "NODE_ENV=production node server.js",
     "test": "npm run lint"
   },
   "author": "Edd Yerburgh",
